@@ -398,7 +398,7 @@ with tab1:
             color_discrete_sequence=px.colors.qualitative.Set3
         )
         fig_category.update_layout(height=400)
-        st.plotly_chart(fig_category, use_container_width=True)
+        st.plotly_chart(fig_category, width='stretch')
 
     with col2:
         # Season distribution
@@ -414,7 +414,7 @@ with tab1:
             color_discrete_sequence=px.colors.qualitative.Pastel
         )
         fig_season.update_layout(height=400, showlegend=False)
-        st.plotly_chart(fig_season, use_container_width=True)
+        st.plotly_chart(fig_season, width='stretch')
 
     col3, col4 = st.columns(2)
 
@@ -433,7 +433,7 @@ with tab1:
             color_continuous_scale='Blues'
         )
         fig_items.update_layout(height=400)
-        st.plotly_chart(fig_items, use_container_width=True)
+        st.plotly_chart(fig_items, width='stretch')
 
     with col4:
         # Top 10 locations
@@ -450,7 +450,7 @@ with tab1:
             color_continuous_scale='Greens'
         )
         fig_locations.update_layout(height=400)
-        st.plotly_chart(fig_locations, use_container_width=True)
+        st.plotly_chart(fig_locations, width='stretch')
 
 with tab2:
     st.subheader("Purchase Analysis")
@@ -468,7 +468,7 @@ with tab2:
             color_discrete_sequence=['#3B82F6']
         )
         fig_dist.update_layout(height=400)
-        st.plotly_chart(fig_dist, use_container_width=True)
+        st.plotly_chart(fig_dist, width='stretch')
 
         # Average purchase by category
         st.markdown("#### Average Purchase by Category")
@@ -483,7 +483,7 @@ with tab2:
             color_discrete_sequence=px.colors.qualitative.Set2
         )
         fig_avg_cat.update_layout(height=350, showlegend=False)
-        st.plotly_chart(fig_avg_cat, use_container_width=True)
+        st.plotly_chart(fig_avg_cat, width='stretch')
 
     with col2:
         # Purchase by season and category
@@ -498,7 +498,7 @@ with tab2:
             color_continuous_scale='RdYlGn'
         )
         fig_season_cat.update_layout(height=500)
-        st.plotly_chart(fig_season_cat, use_container_width=True)
+        st.plotly_chart(fig_season_cat, width='stretch')
 
         # Frequency of purchases
         st.markdown("#### Purchase Frequency Distribution")
@@ -512,7 +512,7 @@ with tab2:
             hole=0.3
         )
         fig_freq.update_layout(height=350)
-        st.plotly_chart(fig_freq, use_container_width=True)
+        st.plotly_chart(fig_freq, width='stretch')
 
 with tab3:
     st.subheader("Customer Demographics")
@@ -530,7 +530,7 @@ with tab3:
             color_discrete_sequence=['#10B981']
         )
         fig_age.update_layout(height=400)
-        st.plotly_chart(fig_age, use_container_width=True)
+        st.plotly_chart(fig_age, width='stretch')
 
         # Gender distribution
         st.markdown("#### Gender Distribution")
@@ -545,7 +545,7 @@ with tab3:
             color_discrete_sequence=['#3B82F6', '#EC4899']
         )
         fig_gender.update_layout(height=350)
-        st.plotly_chart(fig_gender, use_container_width=True)
+        st.plotly_chart(fig_gender, width='stretch')
 
     with col2:
         # Age vs Purchase Amount
@@ -560,7 +560,7 @@ with tab3:
             opacity=0.6
         )
         fig_age_purchase.update_layout(height=400)
-        st.plotly_chart(fig_age_purchase, use_container_width=True)
+        st.plotly_chart(fig_age_purchase, width='stretch')
 
         # Previous purchases distribution
         st.markdown("#### Previous Purchases Distribution")
@@ -571,7 +571,7 @@ with tab3:
             color_discrete_sequence=['#F59E0B']
         )
         fig_prev.update_layout(height=350)
-        st.plotly_chart(fig_prev, use_container_width=True)
+        st.plotly_chart(fig_prev, width='stretch')
 
 with tab4:
     st.subheader("Revenue Analysis")
@@ -596,7 +596,7 @@ with tab4:
         )
         fig_rev_cat.update_traces(texttemplate='$%{text:.2f}', textposition='outside')
         fig_rev_cat.update_layout(height=400)
-        st.plotly_chart(fig_rev_cat, use_container_width=True)
+        st.plotly_chart(fig_rev_cat, width='stretch')
 
         # Revenue by season
         st.markdown("#### Revenue by Season")
@@ -612,7 +612,7 @@ with tab4:
         )
         fig_rev_season.update_traces(texttemplate='$%{text:.2f}', textposition='outside')
         fig_rev_season.update_layout(height=350, showlegend=False)
-        st.plotly_chart(fig_rev_season, use_container_width=True)
+        st.plotly_chart(fig_rev_season, width='stretch')
 
     with col2:
         # Revenue by location (top 15)
@@ -630,7 +630,7 @@ with tab4:
             color_continuous_scale='Oranges'
         )
         fig_rev_loc.update_layout(height=500)
-        st.plotly_chart(fig_rev_loc, use_container_width=True)
+        st.plotly_chart(fig_rev_loc, width='stretch')
 
         # Revenue metrics
         st.markdown("#### Revenue Summary")
@@ -665,7 +665,7 @@ with tab5:
         )
         fig_rating.update_traces(textposition='outside')
         fig_rating.update_layout(height=400)
-        st.plotly_chart(fig_rating, use_container_width=True)
+        st.plotly_chart(fig_rating, width='stretch')
 
         # Average rating by category
         st.markdown("#### Average Rating by Category")
@@ -682,7 +682,7 @@ with tab5:
         )
         fig_avg_rating_cat.update_traces(texttemplate='%{text:.2f}', textposition='outside')
         fig_avg_rating_cat.update_layout(height=350)
-        st.plotly_chart(fig_avg_rating_cat, use_container_width=True)
+        st.plotly_chart(fig_avg_rating_cat, width='stretch')
 
     with col2:
         # Rating vs Purchase Amount
@@ -696,7 +696,7 @@ with tab5:
             trendline='ols'
         )
         fig_rating_purchase.update_layout(height=400)
-        st.plotly_chart(fig_rating_purchase, use_container_width=True)
+        st.plotly_chart(fig_rating_purchase, width='stretch')
 
         # Average rating by season
         st.markdown("#### Average Rating by Season")
@@ -711,7 +711,7 @@ with tab5:
             color_discrete_sequence=['#EF4444']
         )
         fig_avg_rating_season.update_layout(height=350)
-        st.plotly_chart(fig_avg_rating_season, use_container_width=True)
+        st.plotly_chart(fig_avg_rating_season, width='stretch')
 
 with tab6:
     st.subheader("Shipping & Payment Analytics")
@@ -731,7 +731,7 @@ with tab6:
             hole=0.4
         )
         fig_shipping.update_layout(height=400)
-        st.plotly_chart(fig_shipping, use_container_width=True)
+        st.plotly_chart(fig_shipping, width='stretch')
 
         # Payment method distribution
         st.markdown("#### Payment Method Distribution")
@@ -748,7 +748,7 @@ with tab6:
         fig_payment.update_traces(textposition='outside')
         fig_payment.update_layout(height=350, showlegend=False)
         fig_payment.update_xaxes(tickangle=45)
-        st.plotly_chart(fig_payment, use_container_width=True)
+        st.plotly_chart(fig_payment, width='stretch')
 
     with col2:
         # Discount and promo usage
@@ -773,7 +773,7 @@ with tab6:
         )
         fig_discount.update_traces(textposition='outside')
         fig_discount.update_layout(height=350, showlegend=False)
-        st.plotly_chart(fig_discount, use_container_width=True)
+        st.plotly_chart(fig_discount, width='stretch')
 
         # Size distribution
         st.markdown("#### Size Distribution")
@@ -795,7 +795,7 @@ with tab6:
         )
         fig_size.update_traces(textposition='outside')
         fig_size.update_layout(height=350, showlegend=False)
-        st.plotly_chart(fig_size, use_container_width=True)
+        st.plotly_chart(fig_size, width='stretch')
 
 with tab7:
     st.subheader("Customer Value Matrix")
@@ -854,7 +854,7 @@ with tab7:
                          annotation_text="Median Frequency")
 
     fig_matrix.update_layout(height=500)
-    st.plotly_chart(fig_matrix, use_container_width=True)
+    st.plotly_chart(fig_matrix, width='stretch')
 
     # Segment distribution
     col1, col2 = st.columns(2)
@@ -890,7 +890,7 @@ with tab7:
             color_discrete_sequence=px.colors.sequential.Blues_r
         )
         fig_loyalty.update_layout(height=300)
-        st.plotly_chart(fig_loyalty, use_container_width=True)
+        st.plotly_chart(fig_loyalty, width='stretch')
 
 with tab8:
     st.subheader("Promotional Effectiveness Analysis")
@@ -948,7 +948,7 @@ with tab8:
                 color_discrete_map={'With Discount': '#ffc107', 'No Discount': '#28a745'}
             )
             fig_promo.update_layout(height=400)
-            st.plotly_chart(fig_promo, use_container_width=True)
+            st.plotly_chart(fig_promo, width='stretch')
 
         with col2:
             # Statistical summary
@@ -1021,7 +1021,7 @@ with tab9:
                            'PCA2': f'PC2 ({variance_explained[1]*100:.1f}% variance)'}
                 )
                 fig_cluster.update_layout(height=500)
-                st.plotly_chart(fig_cluster, use_container_width=True)
+                st.plotly_chart(fig_cluster, width='stretch')
 
             with col2:
                 st.markdown("#### Cluster Profiles")
